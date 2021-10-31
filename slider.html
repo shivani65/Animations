@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			width:20%;
+			height:250px;
+			border:1px solid green;
+			display: inline-block;
+			margin:40px 30px 40px 30px ;
+
+		}
+		.box1{
+			border:1px solid red;
+			background: url(flower.jpg)no-repeat;
+			background-size: 100% 100%;
+			border-radius: 250px;
+			opacity:0.5;
+        }
+
+		.box2{
+			border:1px solid black;
+			background: url(nature.jpg)no-repeat;
+			background-size: 100% 100%;
+			animation-name: move;
+			animation-duration:5s;
+			animation-iteration-count:infinite;	
+			border-radius: 20px;
+			box-shadow: 10px 10px 5px blue;
+		}
+		@keyframes move{
+			0%{
+				background: url(nature.jpg)no-repeat;
+				background-size: 100% 100%;
+			}
+			20%{
+				background: url(flower.jpg)no-repeat;
+				background-size: 100% 100%;
+			}
+			30%{
+				background: url(Chrysanthemum.jpg)no-repeat;
+				background-size: 100% 100%;
+
+			}
+		}
+		.box3{
+			border:1px solid green;
+			background: url(cat.jpg)no-repeat;
+			background-size: 100% 100%;
+			animation-name:slider;
+			/*animation-delay: 6s;*/
+			animation-duration: 4s;
+			animation-direction: bottom;
+			animation-iteration-count: infinite;
+
+		}
+		@keyframes slider{
+			0%{
+				background: url(img1.jpeg)no-repeat;
+				background-size: 100% 100%;
+				transform:rotateX(200deg);
+			}
+			15%{
+				background: url(img2.jpeg)no-repeat;
+				background-size: 100% 100%;
+				transform:rotateY(380deg);
+			}
+			30%{
+				background: url(img3.jpeg)no-repeat;
+				background-size: 100% 100%;
+				transform:rotateZ(800deg);
+			}
+			45%{
+				background: url(cat.jpg)no-repeat;
+				background-size: 100% 100%;
+				transform:rotateY(380deg);
+			}
+			60%{
+				background: url(flower.jpg)no-repeat;
+				background-size: 100% 100%;
+				transform:rotateX(200deg);
+			}
+		}
+		.box4{
+			border:2px solid violet;
+			background: linear-gradient(to right,orange,red,green)
+
+		}
+		.box5{
+			border:8px dotted green;
+			border-top-left-radius: 160px;
+			border-bottom-right-radius: 160px;
+			/*transform:rotateZ(1800deg);*/
+			transition:4s; 	
+			background:radial-gradient(green,orange,red,purple,pink,olive);
+		}
+		.box5:hover
+		{
+			transform:rotateY(380deg);
+		}
+		.box6{
+			border:1px solid blue;
+			background:radial-gradient(black,orange,blue,purple,red,olive);
+		    text-align: center;
+	     	line-height:200px;
+			font-size:25px;
+			transition:4s;
+		}
+		h1:hover{
+				text-shadow:5px 5px 2px orange; 
+			}
+
+
+	</style>
+</head> 
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"><h1>SHIVANI</h1></div>
+
+
+</body>
+</html>
